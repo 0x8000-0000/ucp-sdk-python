@@ -16,4 +16,10 @@
 
 
 def hello() -> str:
+  """Return a friendly greeting.
+
+  Returns:
+      str: A greeting message.
+
+  """
   return "Hello from ucp-python-sdk!"

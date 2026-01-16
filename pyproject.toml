@@ -49,15 +49,16 @@ custom-file-header = """
 line-length = 80
 indent-width = 2
 
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "C4", "SIM", "N", "UP", "D", "PTH", "T20"]
+ignore = ["D100", "D101", "D104", "E501"]
+
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
 skip-magic-trailing-comma = false
 line-ending = "auto"
 docstring-code-format = true
-
-[tool.ruff.lint]
-select = ["E", "F", "W", "B", "C4", "SIM", "N", "UP", "D", "PTH", "T20"]
 
 [tool.ruff.lint.isort]
 combine-as-imports = true
